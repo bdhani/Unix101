@@ -3,10 +3,8 @@ import os
 import django
 import sys
 
-# Add the project directory to the Python path
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-# Set up Django environment
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Unix101.settings")
 django.setup()
 
