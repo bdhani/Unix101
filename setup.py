@@ -1,33 +1,44 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
     name='Unix101',
-    version='1.0',
+    version='1.5.2',
+    author="Bijinepalli Surat Dhani",
+    author_email="bdhanirs26@gmail.com",
+    description="A package to manage Unix commands",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/bdhani/unix101.git",
     packages=find_packages(),
     install_requires=[
-        'asgiref==3.8.1',
-        'certifi==2024.6.2',
-        'charset-normalizer==3.3.2',
-        'click==8.1.7',
-        'colorama==0.4.6',
-        'Django==5.0.6',
-        'idna==3.7',
-        'markdown-it-py==3.0.0',
-        'mdurl==0.1.2',
-        'mysql-connector-python==8.4.0',
-        'mysqlclient==2.2.4',
-        'Pygments==2.18.0',
-        'rich==13.7.1',
-        'shellingham==1.5.4',
-        'sqlparse==0.5.0',
-        'typer==0.12.3',
-        'typing_extensions==4.12.2',
-        'tzdata==2024.1',
-        'urllib3==2.2.1',
+        'certifi',
+        'click',
+        'colorama',
+        'Django',
+        'idna',
+        'markdown-it-py',
+        'mdurl',
+        'mysql-connector-python',
+        'mysqlclient',
+        'Pygments',
+        'rich',
+        'shellingham',
+        'sqlparse',
+        'typer',
+        'typing_extensions',
+        'tzdata',
+        'urllib3',
     ],
+    extras_require={
+        "dev":["twine>=4.0.2"]
+    },
     entry_points={
         'console_scripts': [
-            'richtyper = commands.richtyper:app'
+            'unix101 = commands.richtyper:app'
         ]
     },
+    python_requires='>=3.7',
 )

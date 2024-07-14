@@ -1,3 +1,33 @@
+Metadata-Version: 2.1
+Name: Unix101
+Version: 1.5.2
+Summary: A package to manage Unix commands
+Home-page: https://github.com/bdhani/unix101.git
+Author: Bijinepalli Surat Dhani
+Author-email: bdhanirs26@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: certifi
+Requires-Dist: click
+Requires-Dist: colorama
+Requires-Dist: Django
+Requires-Dist: idna
+Requires-Dist: markdown-it-py
+Requires-Dist: mdurl
+Requires-Dist: mysql-connector-python
+Requires-Dist: mysqlclient
+Requires-Dist: Pygments
+Requires-Dist: rich
+Requires-Dist: shellingham
+Requires-Dist: sqlparse
+Requires-Dist: typer
+Requires-Dist: typing_extensions
+Requires-Dist: tzdata
+Requires-Dist: urllib3
+Provides-Extra: dev
+Requires-Dist: twine>=4.0.2; extra == "dev"
+
 # Unix101
 
 Unix101 is a Django-based application for managing Unix commands. It allows you to add, search, and manage commands with ease.

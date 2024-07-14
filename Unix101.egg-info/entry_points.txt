@@ -1,0 +1,2 @@
+[console_scripts]
+unix101 = commands.richtyper:app
